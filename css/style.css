@@ -1,0 +1,163 @@
+/* body {
+  background-color: teal;
+} */
+/* browers apply their default css
+The intial margins while using div come due to this*/
+@media only screen and (min-width: 600px){
+
+body {
+  font-family: "Noto Sans Display", sans-serif; /* font, font-family */
+  margin: 0px;
+  text-align: center;
+  /*  margin acts as a buffer zone  */
+}
+
+.Top {
+  background-color: #F7F7F7;
+  padding-top: 100px; /*Takes up the entire page*/
+  position: relative;
+  margin: 0;
+}
+h1 {
+  width: 70%;
+  margin: 50px auto 0 auto;
+  color: #112B3C;
+  font-family: "Sacramento";
+  font-size: 8rem; /* 100%=16px=1em*/
+  /*font size is inherited. if body has 2em and h1 has 3 em, resultant em=5em*/
+  /*rem is the root em. this is the main*/
+  /* line-height:4; */
+}
+.middle-container {
+  background-color: #525E75;
+  margin: 0;
+}
+.bottom-container {
+  background-color: #827397;
+  padding: 25px;
+}
+.profile {
+  background-color: #FDEFF4;
+  margin-bottom: 0px;
+}
+.skills {
+  background-color: #EBD8C3;
+  margin-top: 0px;
+
+}
+.skill-image-code{
+  max-width: 25%;
+  margin-right: 30px;
+  float: left;
+
+}
+.skill-image-la{
+  max-width: 25%;
+  margin-left: 30px;
+  float: right;
+}
+.skill-row-code {
+  background-color: #EBD8C3;
+  width: 80%;
+  margin: 40px auto 40px auto;
+  text-align: left;
+  overflow: hidden;
+}
+.skill-row-la {
+  background-color: #EBD8C3;
+  width: 80%;
+  margin: 40px auto 40px auto;
+  text-align: left;
+  overflow: hidden;
+}
+/* .skill-row {
+  background-color: #EBD8C3;
+} */
+/* .pro {
+  text-decoration: underline;
+} */
+
+/* Size rules HTML:
+1. Content is everything. Despite any CSS
+2. Order comes from HTML File.
+3. Children sit over parents.
+
+CSS Postion:
+Static: follow html
+Relative: relative to the Static. IT does not affect any other elements.
+*/
+.Bottom-Cloud {
+  position: absolute; /*absolute takes it out of the flow*/
+  left: 20%; /*For absolute the parent must have relative positioning.*/
+  bottom: 50%;
+}
+.Top-cloud {
+  position: absolute; /*moves all other elements away*/
+  display: block;
+  right: 330px;
+  top: 50px;
+}
+.profile-image {
+  max-width: 20%;
+}
+p {
+  font-size: 1.4rem;
+  color: #151D3B;
+}
+/* .p {
+clear: left will prevent anything from being to the left of the paragraph
+}
+*/
+h3 {
+  padding: 10px;
+  font-style: bold;
+  color:#251D3A;
+  font-size:30px;
+}
+h2 {
+  color: #251D3A;
+  font-size:2.5rem;
+  font-weight: normal;
+}
+.contact-me {
+  background-color: #E9D5CA;
+}
+.coder{
+  font-style: italic;
+}
+a {
+  color: #363062;
+  font-style: bold;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.2em;
+}
+a:hover {
+  color: #FFF2F2;
+}
+/* .btn {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  font-family: Arial;
+  color: #112B3C;
+  font-size: 20px;
+  background: #363062;
+  padding: 10px 20px 40px 20px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: #CE9461;
+  text-decoration: none;
+} */
+/* .btn {
+  background-image: url("Images/unread.png") no-repeat 6px center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display:block;
+} */
+}
